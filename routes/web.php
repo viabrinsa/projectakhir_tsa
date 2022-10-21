@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PengunjungController;
+use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -30,3 +31,6 @@ Route::get('/berandaadmin', [AdminController::class, 'index']);
 
 //pengunjung
 Route::get('/berandapengunjung', [PengunjungController::class, 'index']);
+
+//pengunjung
+Route::get('/berandapetugas', [PetugasController::class, 'index']);
