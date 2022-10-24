@@ -16,28 +16,34 @@
   </div>
   <!-- End Hero Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio sections-bg">
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about sections-bg">
     <div class="container" data-aos="fade-up">
 
       <div class="section-header">
         <h2>ABOUT US</h2>
       </div>
 
-      <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+      <div class="portfolio-isotope">
         <div class="row gy-4 portfolio-container">
 
-          <div class="col-xl-12 portfolio-item filter-product">
+          <div class="col-xl-12 portfolio-item filter-product" style="margin-left:5%;width:90%;">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="pengunjung/assets/img/home/apel.jpg" class="d-block w-100" alt="pengunjung/assets/img/kategori/apel.jpg">
+                  <img src="pengunjung/assets/img/home/str1.jpg" style="width:100%; height:500px">
                 </div>
                 <div class="carousel-item">
-                  <img src="pengunjung/assets/img/home/jeruk.jpeg" class="d-block w-100" alt="pengunjung/assets/img/kategori/jeruk.jpeg">
+                  <img src="pengunjung/assets/img/home/apel.jpeg" style="width:100%; height:500px">
                 </div>
                 <div class="carousel-item">
-                  <img src="pengunjung/assets/img/home/strawberry.jpg" class="d-block w-100" alt="pengunjung/assets/img/kategori/strawberry.jpg">
+                  <img src="pengunjung/assets/img/home/str2.jpg" style="width:100%; height:500px">
+                </div>
+                <div class="carousel-item">
+                  <img src="pengunjung/assets/img/home/jeruk.jpg" style="width:100%; height:500px">
+                </div>
+                <div class="carousel-item">
+                  <img src="pengunjung/assets/img/home/naga.jpg" style="width:100%; height:500px">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -49,12 +55,84 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            <br><br><br>
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <h3>Welcome to Agrowisata</h3>
+                <img src="pengunjung/assets/img/home/agr.jpg" class="img-fluid rounded-4 mb-4">
+              </div>
+              <div class="col-lg-6">
+                <div class="content ps-0 ps-lg-5">
+                  <ul><br><br>
+                    Agrowisata berdiri pada 1991 dan merupakan salah satu pioneer Wisata Agro di Indonesia. 
+                    Di Wisata Agro kami menawarkan wisata berkebun dan memetik buah di kebun apel, jeruk, jambu merah, buah naga, dan strawberry.
+                    Area wisata kami terletak pada ketinggian ± 1000 meter dari permukaan laut dan berudara sejuk.
+                    Anda dapat memetik sendiri buah-buah tersebut fresh langsung dari pohon sambil berkeliling ditemani oleh pemandu kami.
+                    Pemandu kami akan menjelaskan tentang budidaya tanaman dan hal-hal yang berkaitan tentang buah-buah tersebut.
 
-          </div><!-- End Portfolio Container -->
-
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- End About Container -->
         </div>
-
       </div>
-  </section><!-- End Portfolio Section -->
+
+   <!-- ======= Tatacara Section ======= -->
+   <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3>Cara Melakukan <strong>Reservasi</strong></h3>
+                <p>
+                  Berikut ini adalah tatacara melakukan reservasi berkebun
+                </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <div class="accordion-button collapsed">
+                  <span class="num">1.</span>
+                    Melakukan login pada menu "LOGIN". Jika belum memiliki akun maka lakukan register
+                </div>
+              </h3>
+            </div><!-- # item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <div class="accordion-button collapsed">
+                  <span class="num">2.</span>
+                    Daftar reservasi pada menu "RESERVASI" dengan menginputkan semua data yang dibutuhkan. Kemudian klik daftar
+                </div>
+              </h3>
+            </div><!-- # item-->
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <div class="accordion-button collapsed">
+                  <span class="num">3.</span>
+                    Tunggu status pada history. Jika sukses maka cetak invoice, jika gagal lakukan reservasi kembali
+                </div>
+              </h3>
+            </div><!-- # item-->
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <div class="accordion-button collapsed">
+                    <span class="num">4.</span>
+                      Invoice harap dibawa saat berkebun untuk melakukan pembayaran
+                  </div>
+                </h3>
+              </div><!-- # item-->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End Tatacara Section -->
+  </section><!-- End About Section -->
   @include('layoutpengunjung.footer')
   @endsection

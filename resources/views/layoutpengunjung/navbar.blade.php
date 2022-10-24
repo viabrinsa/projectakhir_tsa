@@ -27,7 +27,7 @@
                   <li><a href="/home">BERANDA</a></li>
                   <li><a href="/jenis">JENIS PAKET</a></li>
                   <li><a href="/artikel">ARTIKEL</a></li>
-                  <li><a href="/kontak">LOGIN</a></li>
+                  <li><a href="/login">LOGIN</a></li>
               </ul>
           </nav><!-- .navbar -->
 
