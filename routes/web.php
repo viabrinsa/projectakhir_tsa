@@ -35,6 +35,9 @@ Route::get('/datapetugas', [AdminController::class, 'datapetugas']);
 Route::get('/tambahpetugas', [AdminController::class, 'createpetugas']);
 Route::get('/editpetugas', [AdminController::class, 'editpetugas']);
 Route::get('/datapenyewa', [AdminController::class, 'datapenyewa']);
+Route::get('/datareservasijrk', [AdminController::class, 'datareservasijrk']);
+Route::get('/datareservasiapl', [AdminController::class, 'datareservasiapl']);
+Route::get('/datareservasistr', [AdminController::class, 'datareservasistr']);
 
 //pengunjung
 Route::get('/berandapengunjung', [PengunjungController::class, 'index']);

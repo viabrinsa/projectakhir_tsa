@@ -29,6 +29,18 @@ class AdminController extends Controller
     {
         return view('admin/datapenyewa');
     }
+    public function datareservasijrk()
+    {
+        return view('admin/datareservasijrk');
+    }
+    public function datareservasiapl()
+    {
+        return view('admin/datareservasiapl');
+    }
+    public function datareservasistr()
+    {
+        return view('admin/datareservasistr');
+    }
     /**
      * Show the form for creating a new resource.
      *

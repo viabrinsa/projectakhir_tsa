@@ -72,25 +72,25 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-edit"></i>
             <p>
-             Reservasi
+              Reservasi
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/tampilfilm" class="nav-link">
+              <a href="/datareservasijrk" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Berkebun Jeruk</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/tampilart" class="nav-link">
+              <a href="/datareservasiapl" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Berkebun Apel</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a href="/datareservasistr" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Berkebun Strawberry</p>
               </a>
@@ -101,7 +101,7 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
-              Laporan Reservasi 
+              Laporan Reservasi
             </p>
           </a>
         </li>
