@@ -17,16 +17,28 @@ class AdminController extends Controller
         return view('admin/berandaadmin');
     }
 
+    public function profiladmin()
+    {
+        return view('admin/profiladmin');
+    }
+    public function datapetugas()
+    {
+        return view('admin/datapetugas');
+    }
+    public function datapenyewa()
+    {
+        return view('admin/datapenyewa');
+    }
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createpetugas()
     {
-        //
+        return view('admin/tambahpetugas');
     }
-
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -55,11 +67,18 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function editprofil()
     {
-        //
+        return view('admin/editprofiladmin');
     }
-
+    public function ubahpw()
+    {
+        return view('admin/ubahpwadmin');
+    }
+    public function editpetugas()
+    {
+        return view('admin/editpetugas');
+    }
     /**
      * Update the specified resource in storage.
      *

@@ -28,6 +28,13 @@ Route::get('/register', [AuthController::class, 'register']);
 
 //admin
 Route::get('/berandaadmin', [AdminController::class, 'index']);
+Route::get('/profiladmin', [AdminController::class, 'profiladmin']);
+Route::get('/editprofiladmin', [AdminController::class, 'editprofil']);
+Route::get('/ubahpwadmin', [AdminController::class, 'ubahpw']);
+Route::get('/datapetugas', [AdminController::class, 'datapetugas']);
+Route::get('/tambahpetugas', [AdminController::class, 'createpetugas']);
+Route::get('/editpetugas', [AdminController::class, 'editpetugas']);
+Route::get('/datapenyewa', [AdminController::class, 'datapenyewa']);
 
 //pengunjung
 Route::get('/berandapengunjung', [PengunjungController::class, 'index']);

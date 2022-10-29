@@ -14,7 +14,7 @@
         <img src="admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Admin</a>
+        <a href="/profiladmin" class="d-block">Admin</a>
       </div>
     </div>
 
@@ -53,23 +53,15 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/tables/simple.html" class="nav-link">
+              <a href="/datapetugas" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Admin</p>
+                <p>Petugas</p>
               </a>
             </li>
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/tables/simple.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Loket</p>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/tables/simple.html" class="nav-link">
+              <a href="/datapenyewa" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Penyewa</p>
               </a>
