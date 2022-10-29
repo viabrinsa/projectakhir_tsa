@@ -11,7 +11,7 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+
     public function index()
     {
         return view('admin/berandaadmin');
@@ -41,6 +41,14 @@ class AdminController extends Controller
     {
         return view('admin/datareservasistr');
     }
+    public function jenispaket()
+    {
+        return view('admin/jenispaket');
+    }
+    public function promo()
+    {
+        return view('admin/promo');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -50,7 +58,7 @@ class AdminController extends Controller
     {
         return view('admin/tambahpetugas');
     }
-    
+
     /**
      * Store a newly created resource in storage.
      *
