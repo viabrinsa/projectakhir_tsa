@@ -107,13 +107,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/jenispaket" class="nav-link">
+              <a href="/datajenispaket" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Jenis Paket</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/promo" class="nav-link">
+              <a href="/datapromo" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Promo</p>
               </a>

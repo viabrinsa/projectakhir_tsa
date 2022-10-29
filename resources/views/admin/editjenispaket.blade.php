@@ -2,7 +2,6 @@
 @section('content')
 @include('layoutadmin.navbar')
 @include('layoutadmin.sidebar')
-<!-- Main content -->
 <section class="content">
     <div class="container-fluid">
         <div class="row">
@@ -11,7 +10,7 @@
                 <!-- jquery validation -->
                 <div class="card card-secondary">
                     <div class="card-header">
-                        <h3 class="card-title">Tambah Promo</small></h3>
+                        <h3 class="card-title">Edit Jenis Paket</small></h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -19,17 +18,22 @@
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="judul">Nama Promo</label>
-                                <input type="text" name="judul" class="form-control" id="judul" placeholder="Nama">
+                                <label for="exampleInputEmail1">Jenis Paket</label>
+                                <input type="text" name="judul" class="form-control" value="" id="exampleInputEmail1" placeholder="Nama">
                             </div>
                             <div class="mb-3">
-                                <label for="gambar" class="form-label">Gambar</label>
-                                <input name="gambar" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
+                                <label for="formFile" class="form-label">Gambar</label>
+                                <input class="form-control" name="gambar" type="file" id="gambar" required accept=".jpg,.png,.jpeg">
                             </div>
                             <div class="form-group">
-                                <label for="isi">Deskripsi</label>
-                                <input type="text" name="isi" class="form-control" id="isi" placeholder="No. HP">
+                                <label for="exampleInputPassword1">Deskripsi</label>
+                                <input type="text" name="isi" class="form-control" value="" id="exampleInputPassword1" placeholder="Email">
                             </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Harga</label>
+                                <input type="text" name="isi" class="form-control" value="" id="exampleInputPassword1" placeholder="No. HP">
+                            </div>
+
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">

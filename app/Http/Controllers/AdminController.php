@@ -41,13 +41,13 @@ class AdminController extends Controller
     {
         return view('admin/datareservasistr');
     }
-    public function jenispaket()
+    public function datajenispaket()
     {
-        return view('admin/jenispaket');
+        return view('admin/datajenispaket');
     }
-    public function promo()
+    public function datapromo()
     {
-        return view('admin/promo');
+        return view('admin/datapromo');
     }
     /**
      * Show the form for creating a new resource.
@@ -57,6 +57,14 @@ class AdminController extends Controller
     public function createpetugas()
     {
         return view('admin/tambahpetugas');
+    }
+    public function tambahjenispaket()
+    {
+        return view('admin/tambahjenispaket');
+    }
+    public function tambahpromo()
+    {
+        return view('admin/tambahpromo');
     }
 
     /**

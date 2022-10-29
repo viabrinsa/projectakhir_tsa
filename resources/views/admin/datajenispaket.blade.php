@@ -8,6 +8,7 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
+        <a href="/tambahjenispaket" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
         <hr>
         <table id="example1" class="table table-bordered table-striped">
             <thead>
@@ -27,9 +28,14 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><img class="img-preview img-fluid" src="" style="max-width: 180px;"></td>
+                    <td>
+                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-danger">Hapus</button>
+                        </form>
+                    </td>
                 </tr>
 
             </tbody>
@@ -37,6 +43,5 @@
     </div>
     <!-- /.card-body -->
 </div>
-
 @include('layoutadmin.footer')
 @endsection

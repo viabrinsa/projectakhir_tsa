@@ -2,46 +2,57 @@
 @section('content')
 @include('layoutadmin.navbar')
 @include('layoutadmin.sidebar')
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title">PETUGAS</h3>
-    </div>
-    <!-- /.card-header -->
-    <div class="card-body">
-        <a href="/tambahpetugas" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
-        <hr>
-        <table id="example1" class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Jenis Paket</th>
-                    <th>Gambar</th>
-                    <th>Deskripsi</th>
-                    <th>Harga</th>
-                </tr>
-            </thead>
-            <tbody>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- jquery validation -->
+                <div class="card card-secondary">
+                    <div class="card-header">
+                        <h3 class="card-title">Tambah Jenis Paket</small></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                        @csrf
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="judul">Jenis Paket</label>
+                                <input type="text" name="judul" class="form-control" id="judul" placeholder="Nama">
+                            </div>
+                            <div class="mb-3">
+                                <label for="gambar" class="form-label">Gambar</label>
+                                <input name="gambar" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
+                            </div>
+                            <div class="form-group">
+                                <label for="isi">Deskripsi</label>
+                                <input type="text" name="isi" class="form-control" id="isi" placeholder="No. HP">
+                            </div>
+                            <div class="form-group">
+                                <label for="isi">Harga</label>
+                                <input type="text" name="isi" class="form-control" id="isi" placeholder="Bidang Kerja">
+                            </div>
 
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img class="img-preview img-fluid" src="" style="max-width: 180px;"></td>
-                    <td>
-                        <a href="" class="btn btn-warning btn-sm">Edit</a>
-                        <form action="" method="POST">
-                            @csrf
-                            <button type="submit" class="btn btn-danger">Hapus</button>
-                        </form>
-                    </td>
-                </tr>
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!--/.col (left) -->
+            <!-- right column -->
+            <div class="col-md-6">
 
-            </tbody>
-        </table>
-    </div>
-    <!-- /.card-body -->
-</div>
+            </div>
+            <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section>
 @include('layoutadmin.footer')
 @endsection

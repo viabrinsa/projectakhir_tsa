@@ -38,6 +38,10 @@ Route::get('/datapenyewa', [AdminController::class, 'datapenyewa']);
 Route::get('/datareservasijrk', [AdminController::class, 'datareservasijrk']);
 Route::get('/datareservasiapl', [AdminController::class, 'datareservasiapl']);
 Route::get('/datareservasistr', [AdminController::class, 'datareservasistr']);
+Route::get('/datajenispaket', [AdminController::class, 'datajenispaket']);
+Route::get('/datapromo', [AdminController::class, 'datapromo']);
+Route::get('/tambahjenispaket', [AdminController::class, 'tambahjenispaket']);
+Route::get('/tambahpromo', [AdminController::class, 'tambahpromo']);
 
 //pengunjung
 Route::get('/berandapengunjung', [PengunjungController::class, 'index']);
