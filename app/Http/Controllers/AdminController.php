@@ -49,6 +49,14 @@ class AdminController extends Controller
     {
         return view('admin/datapromo');
     }
+    public function dataartikel()
+    {
+        return view('admin/dataartikel');
+    }
+    public function datagaleri()
+    {
+        return view('admin/datagaleri');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -66,7 +74,14 @@ class AdminController extends Controller
     {
         return view('admin/tambahpromo');
     }
-
+    public function tambahartikel()
+    {
+        return view('admin/tambahartikel');
+    }
+    public function tambahgaleri()
+    {
+        return view('admin/tambahgaleri');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -106,6 +121,14 @@ class AdminController extends Controller
     public function editpetugas()
     {
         return view('admin/editpetugas');
+    }
+    public function editartikel()
+    {
+        return view('admin/editartikel');
+    }
+    public function editgaleri()
+    {
+        return view('admin/editgaleri');
     }
     /**
      * Update the specified resource in storage.
