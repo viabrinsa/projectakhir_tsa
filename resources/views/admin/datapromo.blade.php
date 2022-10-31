@@ -29,7 +29,7 @@
                     <td></td>
                     <td><img class="img-preview img-fluid" src="" style="max-width: 180px;"></td>
                     <td>
-                        <a href="" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="/editpromo" class="btn btn-warning btn-sm">Edit</a>
                         <form action="" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-danger">Hapus</button>

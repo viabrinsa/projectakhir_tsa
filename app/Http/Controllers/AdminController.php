@@ -49,6 +49,10 @@ class AdminController extends Controller
     {
         return view('admin/datapromo');
     }
+    public function datalaporan()
+    {
+        return view('admin/datalaporan');
+    }
     public function dataartikel()
     {
         return view('admin/dataartikel');
@@ -121,6 +125,14 @@ class AdminController extends Controller
     public function editpetugas()
     {
         return view('admin/editpetugas');
+    }
+    public function editjenispaket()
+    {
+        return view('admin/editjenispaket');
+    }
+    public function editpromo()
+    {
+        return view('admin/editpromo');
     }
     public function editartikel()
     {
