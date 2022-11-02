@@ -54,5 +54,5 @@
   </div><!-- /.container-fluid -->
 </section>
 <!-- /.content -->
-@include('layoutadmin.footer')
+
 @endsection

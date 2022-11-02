@@ -1,7 +1,7 @@
 @extends('layoutadmin.master')
 @section('content')
-    @include('layoutadmin.navbar')
-    @include('layoutadmin.sidebar')
+@include('layoutadmin.navbar')
+@include('layoutadmin.sidebar')
     <section class="content">
         <div class="container-fluid">
             <div class="row">
@@ -14,23 +14,20 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                        <form method="post" action="{{url('editartikel', ['id' => $artikel->id_artikel])}}" enctype="multipart/form-data" id="quickForm">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Judul Artikel</label>
-                                    <input type="text" name="judul" class="form-control" value=""
-                                        id="exampleInputEmail1" placeholder="Nama">
+                                    <label for="exampleInputEmail1">Judul</label>
+                                    <input type="text" name="judul" class="form-control" value="{{$artikel->judul}}" id="judul" placeholder="Judul">
                                 </div>
                                 <div class="form-group">
-                                    <label for="isi">Isi Artikel</label>
-                                    <input type="text" name="isi" class="form-control" id="isi"
-                                        placeholder="Masukkan deskripsi artikel">
+                                    <label for="exampleInputEmail1">Isi Artikel</label>
+                                    <input type="text" name="isi_artikel" class="form-control" value="{{$artikel->isi_artikel}}" id="isi_artiekl" placeholder="Isi Artikel">
                                 </div>
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Gambar</label>
-                                    <input class="form-control" name="gambar" type="file" id="gambar" required
-                                        accept=".jpg,.png,.jpeg">
+                                    <input class="form-control" name="gambar_artikel" type="file" id="gambar_artikel" required accept=".jpg,.png,.jpeg">
                                 </div>
                             </div>
                             <!-- /.card-body -->
@@ -51,5 +48,5 @@
             <!-- /.row -->
         </div><!-- /.container-fluid -->
     </section>
-    @include('layoutadmin.footer')
+
 @endsection

@@ -15,23 +15,20 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                        <form method="post" action="{{ route('tambahartikel') }}" enctype="multipart/form-data" id="quickForm">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="judul">Judul Artikel</label>
-                                    <input type="text" name="judul" class="form-control" id="judul"
-                                        placeholder="Nama">
+                                    <label for="nama">Judul</label>
+                                    <input type="text" name="judul" class="form-control" id="judul" placeholder="Judul">
                                 </div>
                                 <div class="form-group">
-                                    <label for="isi">Isi Artikel</label>
-                                    <input type="text" name="isi" class="form-control" id="isi"
-                                        placeholder="Masukkan deskripsi artikel">
+                                    <label for="nama">Isi Artikel</label>
+                                    <input type="text" name="isi_artikel" class="form-control" id="isi_artikel" placeholder="Isi Artikel">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="gambar" class="form-label">Gambar</label>
-                                    <input name="gambar" class="form-control" type="file" required
-                                        accept=".jpg,.png,.jpeg">
+                                    <label for="formFile" class="form-label">Gambar</label>
+                                    <input name="gambar_artikel" class="form-control" type="file" id="gambar_artikel" accept="image/*">
                                 </div>
                             </div>
                             <!-- /.card-body -->
@@ -52,5 +49,5 @@
             <!-- /.row -->
         </div><!-- /.container-fluid -->
     </section>
-    @include('layoutadmin.footer')
+
 @endsection

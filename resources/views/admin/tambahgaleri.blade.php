@@ -15,18 +15,20 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                        <form method="post" action="{{ route('tambahgaleri') }}" enctype="multipart/form-data" id="quickForm">
                             @csrf
-                            <div class="mb-3">
-                                <label for="gambar" class="form-label">Gambar</label>
-                                <input name="gambar" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
+                            <div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Gambar</label>
+                                    <input name="gambar_galeri" class="form-control" type="file" id="gambar_galeri" accept="image/*">
+                                </div>
                             </div>
                     </div>
                     <!-- /.card-body -->
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                    </div>
-                    </form>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </div>
+                        </form>
                 </div>
                 <!-- /.card -->
             </div>
@@ -40,5 +42,5 @@
         <!-- /.row -->
         </div><!-- /.container-fluid -->
     </section>
-    @include('layoutadmin.footer')
+
 @endsection

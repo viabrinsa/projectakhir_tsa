@@ -8,7 +8,7 @@
   </div>
   <!-- /.card-header -->
   <div class="card-body">
-    <a href="/tambahpetugas" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
+    <a href="{{url('createpetugas')}}" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
     <hr>
     <table id="example1" class="table table-bordered table-striped">
       <thead>
@@ -23,27 +23,27 @@
         </tr>
       </thead>
       <tbody>
-
+      @foreach($data as $i => $petugas)
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td><img class="img-preview img-fluid" src="" style="max-width: 180px;"></td>
+          <td>{{++$i}}</td>
+          <td>{{$petugas->nama}}</td>
+          <td>{{$petugas->email}}</td>
+          <td>{{$petugas->no_hp}}</td>
+          <td>{{$petugas->role}}</td>
+          <td><img class="img-preview img-fluid" src="{{ url('/storage/'.$petugas->foto) }}" style="max-width: 180px;"></td>
           <td>
-            <a href="" class="btn btn-warning btn-sm">Edit</a>
-            <form action="" method="POST">
+            <a href="{{ url('/editpetugas', ['id' => $petugas->id_admin_petugas]) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+            <form action="{{ url('/destroypetugas',['id'=>$petugas->id_admin_petugas]) }}" method="POST">
               @csrf
-              <button type="submit" class="btn btn-danger">Hapus</button>
+              <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Menghapus Data Ini?')" ><i class="fas fa-eraser"></i></button>
             </form>
           </td>
         </tr>
-
+        @endforeach
       </tbody>
     </table>
   </div>
   <!-- /.card-body -->
 </div>
-@include('layoutadmin.footer')
+
 @endsection

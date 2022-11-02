@@ -13,16 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('admin_petugas', function (Blueprint $table) {
-            $table->id('id_admin_petugas');
+        Schema::create('pengunjung', function (Blueprint $table) {
+            $table->id('id_pengunjung');
             $table->foreignId('id_user')->nullable()->constrained('users', 'id')
                 ->onUpdate('no action')
                 ->onDelete('no action');
             $table->string('nama')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->date('tgl_lahir')->nullable();
+            $table->enum('jenkel', ['Laki-Laki', 'Perempuan'])->default('Laki-Laki');
             $table->string('email')->unique();
             $table->string('no_hp')->nullable();
-            $table->string('foto')->nullable();
-            $table->string('role')->nullable();
+            $table->text('alamat')->nullable();
+            $table->text('foto')->nullable();
             $table->timestamps();
         });
     }
@@ -34,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admin_petugas');
+        Schema::dropIfExists('pengunjung');
     }
 };

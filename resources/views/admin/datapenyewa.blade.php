@@ -41,5 +41,5 @@
   <!-- /.card-body -->
 </div>
 
-@include('layoutadmin.footer')
+
 @endsection

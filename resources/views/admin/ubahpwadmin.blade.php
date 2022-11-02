@@ -44,5 +44,5 @@
     <!-- /.row -->
   </div><!-- /.container-fluid -->
 </section>
-@include('layoutadmin.footer')
+
 @endsection

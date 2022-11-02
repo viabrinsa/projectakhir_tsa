@@ -15,20 +15,24 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                    <form method="post" action="{{ route('tambahpromo') }}" enctype="multipart/form-data" id="quickForm">
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="judul">Nama Promo</label>
-                                <input type="text" name="judul" class="form-control" id="judul" placeholder="Nama">
-                            </div>
-                            <div class="mb-3">
-                                <label for="gambar" class="form-label">Gambar</label>
-                                <input name="gambar" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
+                                <label for="nama_promo">Nama Promo</label>
+                                <input type="text" name="nama_promo" class="form-control" id="nama_promo" placeholder="Nama Promo">
                             </div>
                             <div class="form-group">
-                                <label for="isi">Deskripsi</label>
-                                <input type="text" name="isi" class="form-control" id="isi" placeholder="No. HP">
+                                <label for="deskripsi_promo">Deskripsi</label>
+                                <input type="text" name="deskripsi_promo" class="form-control" id="deskripsi_promo" placeholder="Deskripsi">
+                            </div>
+                            <div class="form-group">
+                                <label for="potongan">Potongan</label>
+                                <input type="text" name="potongan" class="form-control" id="potongan" placeholder="Potongan">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Gambar</label>
+                                <input name="gambar_promo" class="form-control" type="file" id="gambar_promo" accept="image/*">
                             </div>
                         </div>
                         <!-- /.card-body -->
@@ -49,5 +53,5 @@
         <!-- /.row -->
     </div><!-- /.container-fluid -->
 </section>
-@include('layoutadmin.footer')
+
 @endsection

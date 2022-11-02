@@ -15,28 +15,28 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form method="post" action=""  enctype="multipart/form-data" id="quickForm">
+          <form id="quickForm" action="{{ route('tambahpetugas') }}"   method="post" enctype="multipart/form-data" >
             @csrf
             <div class="card-body">
               <div class="form-group">
-                <label for="judul">Nama</label>
-                <input type="text" name="judul" class="form-control" id="judul" placeholder="Nama">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" class="form-control" id="nama" placeholder="Nama">
               </div>
               <div class="form-group">
-                <label for="isi">Email</label>
-                <input type="text" name="isi" class="form-control" id="isi" placeholder="Email">
+                <label for="email">Email</label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="Email">
               </div>
               <div class="form-group">
                 <label for="isi">No. HP</label>
-                <input type="text" name="isi" class="form-control" id="isi" placeholder="No. HP">
+                <input type="text" name="no_hp" class="form-control" id="no_hp" placeholder="No. HP">
               </div>
               <div class="form-group">
-                <label for="isi">Bidang Kerja</label>
-                <input type="text" name="isi" class="form-control" id="isi" placeholder="Bidang Kerja">
+                <label for="role">Bidang Kerja</label>
+                <input type="text" name="role" class="form-control" id="role" placeholder="Bidang Kerja">
               </div>
               <div class="mb-3">
-                <label for="gambar" class="form-label">Gambar</label>
-                <input name="gambar" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
+                <label for="formFile" class="form-label">Gambar</label>
+                <input name="foto" class="form-control" type="file"id="foto" accept="image/*">
               </div>
             </div>
             <!-- /.card-body -->
@@ -57,5 +57,5 @@
     <!-- /.row -->
   </div><!-- /.container-fluid -->
 </section>
-@include('layoutadmin.footer')
+
 @endsection

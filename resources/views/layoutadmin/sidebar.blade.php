@@ -35,9 +35,8 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-<<<<<<< HEAD
         <li class="nav-item">
-          <a href="/berandaadmin" class="nav-link active">
+          <a href="/berandaadmin" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               BERANDA
@@ -71,7 +70,7 @@
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-edit"></i>
+            <i class="nav-icon fas fa-table"></i>
             <p>
               Reservasi
               <i class="fas fa-angle-left right"></i>
@@ -99,8 +98,16 @@
           </ul>
         </li>
         <li class="nav-item">
+          <a href="/datalaporan" class="nav-link">
+          <i class="nav-icon fas fa-table"></i>
+            <p>
+              LAPORAN
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-edit"></i>
+            <i class="nav-icon fas fa-table"></i>
             <p>
               Paket
               <i class="fas fa-angle-left right"></i>
@@ -121,106 +128,12 @@
             </li>
           </ul>
         </li>
-=======
-                <li class="nav-item">
-                    <a href="/berandaadmin" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            BERANDA
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-table"></i>
-                        <p>
-                            DATA MASTER
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/datapetugas" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Petugas</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/datapenyewa" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Penyewa</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
-                        <p>
-                            Reservasi
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/datareservasijrk" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Berkebun Jeruk</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/datareservasiapl" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Berkebun Apel</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/datareservasistr" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Berkebun Strawberry</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
-                        <p>
-                            Paket
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/datajenispaket" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Jenis Paket</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/datapromo" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Promo</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/datalaporan" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Laporan</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
->>>>>>> 48bd6b0589c8dfab78be76fe34d330c474ec4867
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-table"></i>
-                        <p>
-                            Profil Company
-                            <i class="fas fa-angle-left right"></i>
+         <li class="nav-item">
+              <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                    Profil Company
+                    <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
@@ -251,19 +164,6 @@
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0">BERANDA</h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                        <li class="breadcrumb-item active">Dashboard v1</li>
-                    </ol>
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </div>
+    
     <!-- /.content-header -->
+<div>

@@ -8,40 +8,42 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-        <a href="/tambahjenispaket" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
+        <a href="{{url('createpaket')}}" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
         <hr>
         <table id="example1" class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <th>No</th>
                     <th>Jenis Paket</th>
-                    <th>Gambar</th>
                     <th>Deskripsi</th>
-                    <th>Harga</th>
+                    <th>Harga Weekday</th>
+                    <th>Harga Weekend</th>
+                    <th>Gambar</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
-
+            @foreach($data as $i => $paket)
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img class="img-preview img-fluid" src="" style="max-width: 180px;"></td>
+                    <td>{{++$i}}</td>
+                    <td>{{$paket->nama_paket}}</td>
+                    <td>{{$paket->deskripsi_paket}}</td>
+                    <td>{{$paket->harga_weekday}}</td>
+                    <td>{{$paket->harga_weekend}}</td>
+                    <td><img class="img-preview img-fluid" src="{{ url('/storage/'.$paket->gambar_paket) }}" style="max-width: 180px;"></td>
                     <td>
-                        <a href="/editjenispaket" class="btn btn-warning btn-sm">Edit</a>
-                        <form action="" method="POST">
+                        <a href="{{ url('/editpaket', ['id' => $paket->id_paket]) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
+                        <form action="{{ url('/destroypaket',['id'=>$paket->id_paket]) }}" method="POST">
                             @csrf
-                            <button type="submit" class="btn btn-danger">Hapus</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Menghapus Data Ini?')" ><i class="fas fa-eraser"></i></button>
                         </form>
                     </td>
                 </tr>
-
+            @endforeach
             </tbody>
         </table>
     </div>
     <!-- /.card-body -->
 </div>
-@include('layoutadmin.footer')
+
 @endsection

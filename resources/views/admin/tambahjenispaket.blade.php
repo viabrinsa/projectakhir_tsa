@@ -11,30 +11,34 @@
                 <!-- jquery validation -->
                 <div class="card card-secondary">
                     <div class="card-header">
-                        <h3 class="card-title">Tambah Jenis Paket </small></h3>
+                        <h3 class="card-title">Tambah Jenis Paket</small></h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                    <form id="quickForm" action="{{ route('tambahpaket') }}"   method="post" enctype="multipart/form-data" >
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="judul">Jenis Paket</label>
-                                <input type="text" name="judul" class="form-control" id="judul" placeholder="Nama">
+                                <label for="nama_paket">Jenis Paket</label>
+                                <input type="text" name="nama_paket" class="form-control" id="nama_paket" placeholder="Jenis Paket">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="deskripsi_paket">Deskripsi</label>
+                                <input type="text" name="deskripsi_paket" class="form-control" id="deskripsi_paket" placeholder="Deskripsi">
+                            </div>
+                            <div class="form-group">
+                                <label for="harga_weekday">Harga Weekday</label>
+                                <input type="text" name="harga_weekday" class="form-control" id="harga_weekday" placeholder="Harga Weekday">
+                            </div>
+                            <div class="form-group">
+                                <label for="harga_weekend">Harga Weekend</label>
+                                <input type="text" name="harga_weekend" class="form-control" id="harga_weekend" placeholder="Harga Weekend">
                             </div>
                             <div class="mb-3">
-                                <label for="gambar" class="form-label">Gambar</label>
-                                <input name="gambar" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
+                                <label for="gambar_paket" class="form-label">Gambar</label>
+                                <input name="gambar_paket" class="form-control" type="file" required accept=".jpg,.png,.jpeg">
                             </div>
-                            <div class="form-group">
-                                <label for="isi">Deskripsi</label>
-                                <input type="text" name="isi" class="form-control" id="isi" placeholder="No. HP">
-                            </div>
-                            <div class="form-group">
-                                <label for="isi">Harga</label>
-                                <input type="text" name="isi" class="form-control" id="isi" placeholder="Bidang Kerja">
-                            </div>
-
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
@@ -54,5 +58,5 @@
         <!-- /.row -->
     </div><!-- /.container-fluid -->
 </section>
-@include('layoutadmin.footer')
+
 @endsection
