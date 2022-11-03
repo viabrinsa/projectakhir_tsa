@@ -86,6 +86,11 @@ Route::get('/editprofiladmin', [AdminController::class, 'editprofil']);
 Route::get('/berandapengunjung', [PengunjungController::class, 'index']);
 Route::get('/artikelpengunjung', [PengunjungController::class, 'artikel']);
 Route::get('/jenispaketpengunjung', [PengunjungController::class, 'jenispaket']);
+Route::get('/berandapengunjunglgn', [PengunjungController::class, 'beranda']);
+Route::get('/artikelpengunjunglgn', [PengunjungController::class, 'artikellgn']);
+Route::get('/jenispaketpengunjunglgn', [PengunjungController::class, 'jenispaketlgn']);
+Route::get('/reservasi', [PengunjungController::class, 'reservasi']);
+Route::get('/history', [PengunjungController::class, 'history']);
 
 //petugas
 Route::get('/berandapetugas', [PetugasController::class, 'index']);
