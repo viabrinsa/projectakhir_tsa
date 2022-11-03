@@ -8,7 +8,7 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-        <a href="{{url('createpromo')}}" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
+        <a href="/tambahreservasi" class="btn btn-primary"><i class="fa fa-plus-square-o"></i>Tambah</a>
         <hr>
         <table id="example1" class="table table-bordered table-striped">
             <thead>

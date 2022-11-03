@@ -90,3 +90,4 @@ Route::get('/berandapetugas', [PetugasController::class, 'index']);
 
 //petugas
 Route::get('/datareservasi', [PetugasController::class, 'datareservasi']);
+Route::get('/tambahreservasi', [PetugasController::class, 'tambahreservasi']);

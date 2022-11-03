@@ -25,6 +25,10 @@ class PetugasController extends Controller
     {
         return view('petugas/datareservasi');
     }
+    public function tambahreservasi()
+    {
+        return view('petugas/tambahreservasi');
+    }
 
     /**
      * Store a newly created resource in storage.
