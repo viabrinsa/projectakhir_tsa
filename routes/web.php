@@ -85,5 +85,8 @@ Route::get('/editprofiladmin', [AdminController::class, 'editprofil']);
 //pengunjung
 Route::get('/berandapengunjung', [PengunjungController::class, 'index']);
 
-//pengunjung
+//petugas
 Route::get('/berandapetugas', [PetugasController::class, 'index']);
+
+//petugas
+Route::get('/datareservasi', [PetugasController::class, 'datareservasi']);

@@ -21,9 +21,9 @@ class PetugasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function datareservasi()
     {
-        //
+        return view('petugas/datareservasi');
     }
 
     /**
