@@ -16,6 +16,16 @@ class PengunjungController extends Controller
         return view('pengunjung/berandapengunjung');
     }
 
+    public function jenispaket()
+    {
+        return view('pengunjung/jenispaketpengunjung');
+    }
+
+    public function artikel()
+    {
+        return view('pengunjung/artikelpengunjung');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

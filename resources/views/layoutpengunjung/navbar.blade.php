@@ -24,9 +24,9 @@
           </a>
           <nav id="navbar" class="navbar">
               <ul>
-                  <li><a href="/home">BERANDA</a></li>
-                  <li><a href="/jenis">JENIS PAKET</a></li>
-                  <li><a href="/artikel">ARTIKEL</a></li>
+                  <li><a href="/berandapengunjung">BERANDA</a></li>
+                  <li><a href="/jenispaketpengunjung">JENIS PAKET</a></li>
+                  <li><a href="/artikelpengunjung">ARTIKEL</a></li>
                   <li><a href="/login">LOGIN</a></li>
               </ul>
           </nav><!-- .navbar -->
