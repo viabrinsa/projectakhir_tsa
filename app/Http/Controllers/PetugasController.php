@@ -27,7 +27,7 @@ class PetugasController extends Controller
     }
     public function tambahreservasi()
     {
-        return view('petugas/tambahreservasi');
+        return view('petugas/tambahreservasipetugas');
     }
 
     /**
