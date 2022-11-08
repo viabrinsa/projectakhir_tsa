@@ -24,34 +24,32 @@
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="judul">Nama Pemesan</label>
-                                    <input type="text" name="judul" class="form-control" id="judul" placeholder="Nama Pemesan">
+                                    <label for="nama_pesan">Nama Pemesan</label>
+                                    <input type="text" name="nama_pesan" class="form-control" id="nama_pesan" placeholder="Nama Pemesan">
                                 </div>
                                 <div class="form-group">
-                                    <label for="isi">Tanggal Pesan</label>
-                                    <input type="datetime-local" name="isi" class="form-control" id="isi" placeholder="Tanggal Pesan">
+                                    <label for="tgl_pesan">Tanggal Pesan</label>
+                                    <input type="datetime-local" name="tgl_pesan" class="form-control" id="tgl_pesan" placeholder="Tanggal Pesan">
                                 </div>
                                 <div class="form-group">
-                                    <label for="isi">Jenis Paket</label>
-                                    <select class="form-control" id="sel1">
-                                        <option>Pilih Paket</option>
-                                        <option>Wisata Petik Apel</option>
-                                        <option>Wisata Petik Jeruk</option>
-                                        <option>Wisata Petik Strowberry</option>
+                                    <label for="nama_paket">Jenis Paket</label>
+                                    <select class="form-control">
+                                        @foreach($paket as $pkt)
+                                        <option value="{{$pkt->id_paket}}">{{$pkt->nama_paket}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="isi">Promo</label>
-                                    <select class="form-control" id="sel1">
-                                        <option>Pilih Promo</option>
-                                        <option>Diskon 5%</option>
-                                        <option>Gratis yogurt</option>
-                                        <option>Diskon 8%</option>
+                                    <label for="nama_promo">Promo</label>
+                                    <select class="form-control">
+                                        @foreach($promo as $prm)
+                                        <option value="{{$prm->id_promo}}">{{$prm->nama_promo}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="isi">Jumlah Orang</label>
-                                    <input type="number" name="isi" class="form-control" id="isi" placeholder="Jumlah Orang">
+                                    <label for="jumlah_pesan">Jumlah Orang</label>
+                                    <input type="number" name="jumlah_pesan" class="form-control" id="jumlah_pesan" placeholder="Jumlah Orang">
                                 </div>
                             </div>
                             <!-- /.card-body -->

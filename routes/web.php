@@ -90,6 +90,7 @@ Route::get('/artikelpengunjunglgn', [PengunjungController::class, 'artikellgn'])
 Route::get('/galeripengunjunglgn', [PengunjungController::class, 'galerilgn']);
 Route::get('/jenispaketpengunjunglgn', [PengunjungController::class, 'jenispaketlgn']);
 Route::get('/reservasi', [PengunjungController::class, 'reservasi']);
+Route::post('/reservasi', [PengunjungController::class, 'storereservasi']);
 Route::get('/history', [PengunjungController::class, 'history']);
 
 //petugas

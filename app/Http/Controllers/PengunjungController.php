@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Paket;
 use Illuminate\Http\Request;
 use App\Models\Promo;
+use App\Models\Reservasi;
+use App\Models\Status;
 
 class PengunjungController extends Controller
 {
@@ -57,12 +59,38 @@ class PengunjungController extends Controller
 
     public function reservasi()
     {
-        return view('pengunjung/reservasi');
+        $paket = Paket::all(); //mendapatkan data dari tabel paket
+        $promo = Promo::all(); //mendapatkan data dari tabel promo
+        $status = Status::all(); //mendapatkan data dari tabel status
+        return view('pengunjung/reservasi', ['paket' => $paket, 'promo' => $promo, 'status' => $status]);
+    }
+
+    public function storereservasi(Request $request)
+    {
+        $rules = [
+            'nama_pesan' => 'required|string|max:25',
+            'tgl_pesan' => 'required',
+            'id_paket' => 'required',
+            'id_promo' => 'required',
+            'jumlah_pesan' => 'required|int|max:25'
+        ];
+
+        Reservasi::create([
+            'nama_pesan' => $request->input('nama_pesan'),
+            'tgl_pesan' => $request->input('tgl_pesan'),
+            'id_paket' => $request->get('id_paket'),
+            'id_promo' => $request->get('id_promo'),
+            'jumlah_pesan' => $request->input('jumlah_pesan'),
+
+        ]);
+
+        return redirect('history')->with('success', 'Data Berhasil Disimpan');
     }
 
     public function history()
     {
-        return view('pengunjung/history');
+        $data = Reservasi::all();
+        return view('pengunjung/history', ['data' => $data]);
     }
 
     /**

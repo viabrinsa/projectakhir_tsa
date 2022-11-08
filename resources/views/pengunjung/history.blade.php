@@ -19,6 +19,7 @@
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr>
+                            <th>No</th>
                             <th>Nama Pemesan</th>
                             <th>Tanggal Pesan</th>
                             <th>Jenis Paket</th>
@@ -29,6 +30,22 @@
                             <th>Aksi</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        @foreach($data as $i => $reservasi)
+                        <tr>
+                            <td>{{++$i}}</td>
+                            <td>{{$reservasi->nama_pesan}}</td>
+                            <td>{{$reservasi->tgl_pesan}}</td>
+                            <td>{{$reservasi->nama_pasket}}</td>
+                            <td>{{$reservasi->nama_promo}}</td>
+                            <td>{{$reservasi->jumlah_pesan}}</td>
+                            <td>{{$reservasi->id_status}}</td>
+                            <td>{{$reservasi->alasan}}</td>
+                            <td>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
                 </table>
             </div><!-- /.card-body -->
         </div>
