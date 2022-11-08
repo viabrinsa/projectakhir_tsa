@@ -96,5 +96,5 @@ Route::get('/history', [PengunjungController::class, 'history']);
 Route::get('/berandapetugas', [PetugasController::class, 'index']);
 
 //petugas
-Route::get('/datareservasi', [PetugasController::class, 'datareservasi']);
+Route::get('/datareservasipetugas', [PetugasController::class, 'datareservasipetugas']);
 Route::get('/tambahreservasipetugas', [PetugasController::class, 'tambahreservasipetugas']);
