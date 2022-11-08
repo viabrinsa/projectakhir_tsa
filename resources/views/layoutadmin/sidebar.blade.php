@@ -39,7 +39,7 @@
           <a href="/berandaadmin" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
-              BERANDA
+             BERANDA
             </p>
           </a>
         </li>
@@ -55,7 +55,7 @@
             <li class="nav-item">
               <a href="/datapetugas" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Petugas</p>
+                <p>PETUGAS</p>
               </a>
             </li>
           </ul>
@@ -63,39 +63,18 @@
             <li class="nav-item">
               <a href="/datapenyewa" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Penyewa</p>
+                <p>PENYEWA</p>
               </a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="/datareservasiall" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
-              Reservasi
-              <i class="fas fa-angle-left right"></i>
+              DATA RESERVASI
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="/datareservasijrk" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Berkebun Jeruk</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/datareservasiapl" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Berkebun Apel</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/datareservasistr" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Berkebun Strawberry</p>
-              </a>
-            </li>
-          </ul>
         </li>
         <li class="nav-item">
           <a href="/datalaporan" class="nav-link">
@@ -109,7 +88,7 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
-              Paket
+              PAKET
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
@@ -117,13 +96,13 @@
             <li class="nav-item">
               <a href="/datajenispaket" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Jenis Paket</p>
+                <p>JENIS PAKET</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/datapromo" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Promo</p>
+                <p>PROMO</p>
               </a>
             </li>
           </ul>
@@ -132,7 +111,7 @@
               <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-table"></i>
                   <p>
-                    Profil Company
+                    PROFIL PERUSAHAAN
                     <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -140,7 +119,7 @@
                         <li class="nav-item">
                             <a href="/dataartikel" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Artikel</p>
+                                <p>ARTIKEL</p>
                             </a>
                         </li>
                     </ul>
@@ -148,7 +127,7 @@
                         <li class="nav-item">
                             <a href="/datagaleri" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Galeri</p>
+                                <p>GALERI</p>
                             </a>
                         </li>
                     </ul>

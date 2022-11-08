@@ -5,9 +5,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="/berandaadmin" class="nav-link">Beranda</a>
-      </li>
+      
     </ul>
 
     <!-- Right navbar links -->
@@ -29,6 +27,7 @@
                   <i class="fas fa-times"></i>
                 </button>
               </div>
+              
             </div>
           </form>
         </div>
@@ -42,6 +41,9 @@
         <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
         </a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/logout" class="nav-link"><b>LOGOUT</b></a>
       </li>
     </ul>
   </nav>

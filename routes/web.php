@@ -71,9 +71,7 @@ Route::post('/editgaleri/{id}', [AdminController::class, 'updategaleri']);
 Route::post('/destroygaleri/{id}', [AdminController::class, 'destroygaleri']);
 
 Route::get('/datapenyewa', [AdminController::class, 'datapenyewa']);
-Route::get('/datareservasijrk', [AdminController::class, 'datareservasijrk']);
-Route::get('/datareservasiapl', [AdminController::class, 'datareservasiapl']);
-Route::get('/datareservasistr', [AdminController::class, 'datareservasistr']);
+Route::get('/datareservasiall', [AdminController::class, 'datareservasiall']);
 
 
 

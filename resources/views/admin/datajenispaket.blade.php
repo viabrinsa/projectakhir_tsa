@@ -33,10 +33,10 @@
                     <td><img class="img-preview img-fluid" src="{{ url('/storage/'.$paket->gambar_paket) }}" style="max-width: 180px;"></td>
                     <td>
                         <a href="{{ url('/editpaket', ['id' => $paket->id_paket]) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                        <form action="{{ url('/destroypaket',['id'=>$paket->id_paket]) }}" method="POST">
+                        <!-- <form action="{{ url('/destroypaket',['id'=>$paket->id_paket]) }}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Menghapus Data Ini?')" ><i class="fas fa-eraser"></i></button>
-                        </form>
+                        </form> -->
                     </td>
                 </tr>
             @endforeach

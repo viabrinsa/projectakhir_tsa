@@ -1,7 +1,7 @@
 @extends('layoutadmin.master')
 @section('content')
-    @include('layoutadmin.navbar')
-    @include('layoutadmin.sidebar')
+@include('layoutadmin.navbar')
+@include('layoutadmin.sidebar')
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">

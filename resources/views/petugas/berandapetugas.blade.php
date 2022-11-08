@@ -71,5 +71,5 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-@include('layoutpetugas.footer')
+
 @endsection

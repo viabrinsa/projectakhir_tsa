@@ -47,7 +47,7 @@
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
-              DATA CLIENT
+              DATA PENYEWA
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
@@ -55,15 +55,7 @@
             <li class="nav-item">
               <a href="pages/tables/simple.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Registrasi</p>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/tables/simple.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Client</p>
+                <p>REGISTRASI</p>
               </a>
             </li>
           </ul>
@@ -72,7 +64,7 @@
           <a href="/datareservasipetugas" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
-              Reservasi
+              DATA RESERVASI
             </p>
           </a>
         </li>
@@ -86,20 +78,7 @@
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-  <!-- Content Header (Page header) -->
-  <div class="content-header">
-    <div class="container-fluid">
-      <div class="row mb-2">
-        <div class="col-sm-6">
-          <h1 class="m-0">BERANDA</h1>
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-            <li class="breadcrumb-item active">Dashboard v1</li>
-          </ol>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-  </div>
-  <!-- /.content-header -->
+    <!-- Content Header (Page header) -->
+    
+    <!-- /.content-header -->
+<div>

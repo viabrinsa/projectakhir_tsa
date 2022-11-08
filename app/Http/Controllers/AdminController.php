@@ -210,11 +210,11 @@ class AdminController extends Controller
         return redirect('datajenispaket')->with('success', 'Data Berhasil Diubah');
     }
 
-    public function destroypaket($id)
-    {
-        Paket::where('id_paket', $id)->delete();
-        return redirect()->back()->with('success', 'Data Berhasil Dihapus');
-    }
+    // public function destroypaket($id)
+    // {
+    //     Paket::where('id_paket', $id)->delete();
+    //     return redirect()->back()->with('success', 'Data Berhasil Dihapus');
+    // }
 
     //promo
     public function tampilpromo()
@@ -470,17 +470,9 @@ class AdminController extends Controller
     {
         return view('admin/datapenyewa');
     }
-    public function datareservasijrk()
+    public function datareservasiall()
     {
-        return view('admin/datareservasijrk');
-    }
-    public function datareservasiapl()
-    {
-        return view('admin/datareservasiapl');
-    }
-    public function datareservasistr()
-    {
-        return view('admin/datareservasistr');
+        return view('admin/datareservasiall');
     }
     public function datalaporan()
     {
