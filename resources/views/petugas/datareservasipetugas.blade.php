@@ -1,7 +1,7 @@
-@extends('layoutadmin.master')
+@extends('layoutpetugas.master')
 @section('content')
-@include('layoutadmin.navbar')
-@include('layoutadmin.sidebar')
+@include('layoutpetugas.navbar')
+@include('layoutpetugas.sidebar')
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">PROMO</h3>
