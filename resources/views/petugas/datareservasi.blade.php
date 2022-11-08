@@ -23,22 +23,6 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($data as $i => $promo)
-                <tr>
-                    <td>{{++$i}}</td>
-                    <td>{{$promo->nama_promo}}</td>
-                    <td>{{$promo->deskripsi_promo}}</td>
-                    <td>{{$promo->potongan}}</td>
-                    <td><img class="img-preview img-fluid" src="{{ url('/storage/'.$promo->gambar_promo) }}" style="max-width: 180px;"></td>
-                    <td>
-                        <a href="{{ url('/editpromo', ['id' => $promo->id_promo]) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
-                        <form action="{{ url('/destroypromo',['id'=>$promo->id_promo]) }}" method="POST">
-                            @csrf
-                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin Menghapus Data Ini?')"><i class="fas fa-eraser"></i></button>
-                        </form>
-                    </td>
-                </tr>
-                @endforeach
             </tbody>
         </table>
     </div>
