@@ -26,6 +26,7 @@
               <ul>
                   <li><a href="/berandapengunjunglgn">BERANDA</a></li>
                   <li><a href="/jenispaketpengunjunglgn">JENIS PAKET</a></li>
+                  <li><a href="/galeripengunjunglgn">GALERI</a></li>
                   <li><a href="/artikelpengunjunglgn">ARTIKEL</a></li>
                   <li class="dropdown"><a href="#"><span>RESERVASI</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
                       <ul>

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Paket;
 use Illuminate\Http\Request;
+use App\Models\Promo;
 
 class PengunjungController extends Controller
 {
@@ -18,7 +20,13 @@ class PengunjungController extends Controller
 
     public function jenispaket()
     {
-        return view('pengunjung/jenispaketpengunjung');
+        $data = Promo::all();
+        return view('pengunjung/jenispaketpengunjung', ['data' => $data]);
+    }
+
+    public function galeri()
+    {
+        return view('pengunjung/galeripengunjung');
     }
 
     public function artikel()
@@ -33,7 +41,13 @@ class PengunjungController extends Controller
 
     public function jenispaketlgn()
     {
-        return view('pengunjung/jenispaketpengunjunglgn');
+        $data = Promo::all();
+        return view('pengunjung/jenispaketpengunjunglgn', ['data' => $data]);
+    }
+
+    public function galerilgn()
+    {
+        return view('pengunjung/galeripengunjunglgn');
     }
 
     public function artikellgn()

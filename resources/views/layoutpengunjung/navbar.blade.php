@@ -26,6 +26,7 @@
               <ul>
                   <li><a href="/berandapengunjung">BERANDA</a></li>
                   <li><a href="/jenispaketpengunjung">JENIS PAKET</a></li>
+                  <li><a href="/galeripengunjung">GALERI</a></li>
                   <li><a href="/artikelpengunjung">ARTIKEL</a></li>
                   <li><a href="/login">LOGIN</a></li>
               </ul>

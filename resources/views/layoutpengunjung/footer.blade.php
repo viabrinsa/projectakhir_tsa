@@ -21,6 +21,7 @@
                 <ul>
                     <li><a href="#">BERANDA</a></li>
                     <li><a href="#">JENIS PAKET</a></li>
+                    <li><a href="#">GALERI</a></li>
                     <li><a href="#">ARTIKEL</a></li>
                 </ul>
             </div>

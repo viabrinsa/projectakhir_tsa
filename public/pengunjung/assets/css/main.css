@@ -1229,6 +1229,93 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Promo Section
+--------------------------------------------------------------*/
+.promo .promo-flters {
+  padding: 0 0 20px 0;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.promo .promo-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.promo .promo-flters li:hover,
+.promo .promo-flters li.filter-active {
+  color: var(--color-primary);
+}
+
+.promo .promo-flters li:first-child {
+  margin-left: 0;
+}
+
+.promo .promo-flters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .promo .promo-flters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.promo .promo-wrap {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.promo .promo-wrap img {
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.promo .promo-wrap .promo-info {
+  padding: 25px 20px;
+  background-color: #fff;
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  z-index: 2;
+}
+
+.promo .promo-wrap .promo-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.promo .promo-wrap .promo-info h4 a {
+  color: var(--color-default);
+  transition: 0.3s;
+}
+
+.promo .promo-wrap .promo-info h4 a:hover {
+  color: var(--color-primary);
+}
+
+.promo .promo-wrap .promo-info p {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.promo .promo-wrap:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
