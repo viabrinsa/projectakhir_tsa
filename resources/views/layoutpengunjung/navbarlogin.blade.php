@@ -24,10 +24,17 @@
           </a>
           <nav id="navbar" class="navbar">
               <ul>
-                  <li><a href="/berandapengunjung">BERANDA</a></li>
-                  <li><a href="/jenispaketpengunjung">JENIS PAKET</a></li>
-                  <li><a href="/artikelpengunjung">ARTIKEL</a></li>
-                  <li><a href="/login">LOGIN</a></li>
+                  <li><a href="/berandapengunjunglgn">BERANDA</a></li>
+                  <li><a href="/jenispaketpengunjunglgn">JENIS PAKET</a></li>
+                  <li><a href="/artikelpengunjunglgn">ARTIKEL</a></li>
+                  <li class="dropdown"><a href="#"><span>RESERVASI</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                      <ul>
+                          <li><a href="/reservasi">DAFTAR RESERVASI</a></li>
+                          <li><a href="/history">HISTORY RESERVASI</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#"><img src="pengunjung/assets/img/profile1.png"></a></li>
+                  <li><a href="/logout">LOGOUT</a></li>
               </ul>
           </nav><!-- .navbar -->
 

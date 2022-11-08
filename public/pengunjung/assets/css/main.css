@@ -1141,16 +1141,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Galeri Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-flters {
+.galeri .galeri-flters {
   padding: 0 0 20px 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-flters li {
+.galeri .galeri-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -1161,40 +1161,40 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-flters li:hover,
-.portfolio .portfolio-flters li.filter-active {
+.galeri .galeri-flters li:hover,
+.galeri .galeri-flters li.filter-active {
   color: var(--color-primary);
 }
 
-.portfolio .portfolio-flters li:first-child {
+.galeri .galeri-flters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-flters li:last-child {
+.galeri .galeri-flters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-flters li {
+  .galeri .galeri-flters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-wrap {
+.galeri .galeri-wrap {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 100%;
   overflow: hidden;
 }
 
-.portfolio .portfolio-wrap img {
+.galeri .galeri-wrap img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.galeri .galeri-wrap .galeri-info {
   padding: 25px 20px;
   background-color: #fff;
   position: relative;
@@ -1202,29 +1202,29 @@ section {
   z-index: 2;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.galeri .galeri-wrap .galeri-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 a {
+.galeri .galeri-wrap .galeri-info h4 a {
   color: var(--color-default);
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 a:hover {
+.galeri .galeri-wrap .galeri-info h4 a:hover {
   color: var(--color-primary);
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.galeri .galeri-wrap .galeri-info p {
   color: #6c757d;
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-wrap:hover img {
+.galeri .galeri-wrap:hover img {
   transform: scale(1.1);
 }
 
@@ -1685,9 +1685,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Recent Blog Posts Section
+# Artikel Section
 --------------------------------------------------------------*/
-.recent-posts article {
+.artikel article {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   padding: 30px;
@@ -1696,46 +1696,103 @@ section {
   overflow: hidden;
 }
 
-.recent-posts .post-img {
+.artikel .post-img {
   max-height: 240px;
   margin: -30px -30px 15px -30px;
   overflow: hidden;
 }
 
-.recent-posts .post-category {
+.artikel .post-category {
   font-size: 16px;
   color: #6f6f6f;
   margin-bottom: 10px;
 }
 
-.recent-posts .title {
+.artikel .title {
   font-size: 22px;
   font-weight: 700;
   padding: 0;
   margin: 0 0 20px 0;
 }
 
-.recent-posts .title a {
+.artikel .title a {
   color: var(--color-default);
   transition: 0.3s;
 }
 
-.recent-posts .title a:hover {
+.artikel .title a:hover {
   color: var(--color-primary);
 }
 
-.recent-posts .post-author-img {
+.artikel .post-author-img {
   width: 50px;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.recent-posts .post-author {
+.artikel .post-author {
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.recent-posts .post-date {
+.artikel .post-date {
+  font-size: 14px;
+  color: #3c3c3c;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Jenis Paket Section
+--------------------------------------------------------------*/
+.article {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.jnspkt .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.jnspkt .post-category {
+  font-size: 16px;
+  color: #6f6f6f;
+  margin-bottom: 10px;
+}
+
+.jnspkt .title {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.jnspkt .title a {
+  color: var(--color-default);
+  transition: 0.3s;
+}
+
+.jnspkt .title a:hover {
+  color: var(--color-primary);
+}
+
+.jnspkt .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.jnspkt .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.jnspkt .post-date {
   font-size: 14px;
   color: #3c3c3c;
   margin-bottom: 0;
