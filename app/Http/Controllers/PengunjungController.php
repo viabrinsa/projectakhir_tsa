@@ -71,6 +71,12 @@ class PengunjungController extends Controller
         return view('pengunjung/artikelpengunjunglgn', ['data' => $data]);
     }
 
+    public function detailartikellgn($id_artikel)
+    {
+        $artikel = Artikel::find($id_artikel);
+        return view('pengunjung/detailartikellgn', ['artikel' => $artikel]);
+    }
+
     public function reservasi()
     {
         $paket = Paket::all(); //mendapatkan data dari tabel paket
