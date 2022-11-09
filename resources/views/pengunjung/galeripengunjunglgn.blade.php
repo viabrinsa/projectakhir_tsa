@@ -11,60 +11,13 @@
         </div>
 
         <div class="row gy-4 galeri-container">
-
+            @foreach($data as $i => $galeri)
             <div class="col-xl-4 col-md-6">
                 <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/1.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/1.jpeg" style="width:100%; height:100%" alt=""></a>
+                    <a href="{{ url('/storage/'.$galeri->gambar_galeri) }}" data-gallery="galeri-gallery-app" class="glightbox"><img src="{{ url('/storage/'.$galeri->gambar_galeri) }}" style="width:100%; height:100%" alt=""></a>
                 </div>
             </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/2.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/2.jpeg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/3.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/3.jpeg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/4.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/4.jpeg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/5.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/5.jpeg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/6.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/6.jpeg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/7.jpg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/7.jpg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/8.jpg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/8.jpg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
-
-            <div class="col-xl-4 col-md-6">
-                <div class="galeri-wrap">
-                    <a href="pengunjung/assets/img/galeri/9.jpeg" data-gallery="galeri-gallery-app" class="glightbox"><img src="pengunjung/assets/img/galeri/9.jpeg" style="width:100%; height:100%" alt=""></a>
-                </div>
-            </div><!-- End galeri Item -->
+            @endforeach
 
         </div><!-- End galeri Container -->
 

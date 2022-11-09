@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Promo;
 use App\Models\Reservasi;
 use App\Models\Status;
+use App\Models\Galeri;
 
 class PengunjungController extends Controller
 {
@@ -28,7 +29,8 @@ class PengunjungController extends Controller
 
     public function galeri()
     {
-        return view('pengunjung/galeripengunjung');
+        $data = Galeri::all();
+        return view('pengunjung/galeripengunjung', ['data' => $data]);
     }
 
     public function artikel()
@@ -49,7 +51,8 @@ class PengunjungController extends Controller
 
     public function galerilgn()
     {
-        return view('pengunjung/galeripengunjunglgn');
+        $data = Galeri::all();
+        return view('pengunjung/galeripengunjunglgn', ['data' => $data]);
     }
 
     public function artikellgn()
