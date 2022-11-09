@@ -8,6 +8,7 @@ use App\Models\Promo;
 use App\Models\Reservasi;
 use App\Models\Status;
 use App\Models\Galeri;
+use App\Models\Artikel;
 
 class PengunjungController extends Controller
 {
@@ -23,8 +24,9 @@ class PengunjungController extends Controller
 
     public function jenispaket()
     {
-        $data = Promo::all();
-        return view('pengunjung/jenispaketpengunjung', ['data' => $data]);
+        $prm = Promo::all();
+        $pkt = Paket::all();
+        return view('pengunjung/jenispaketpengunjung', ['prm' => $prm], ['pkt'=>$pkt]);
     }
 
     public function galeri()
@@ -35,7 +37,8 @@ class PengunjungController extends Controller
 
     public function artikel()
     {
-        return view('pengunjung/artikelpengunjung');
+        $data = Artikel::all();
+        return view('pengunjung/artikelpengunjung', ['data' => $data]);
     }
 
     public function beranda()
@@ -45,8 +48,9 @@ class PengunjungController extends Controller
 
     public function jenispaketlgn()
     {
-        $data = Promo::all();
-        return view('pengunjung/jenispaketpengunjunglgn', ['data' => $data]);
+        $prm = Promo::all();
+        $pkt = Paket::all();
+        return view('pengunjung/jenispaketpengunjunglgn', ['prm' => $prm], ['pkt'=>$pkt]);
     }
 
     public function galerilgn()
@@ -57,7 +61,8 @@ class PengunjungController extends Controller
 
     public function artikellgn()
     {
-        return view('pengunjung/artikelpengunjunglgn');
+        $data = Artikel::all();
+        return view('pengunjung/artikelpengunjunglgn', ['data' => $data]);
     }
 
     public function reservasi()
