@@ -25,6 +25,7 @@ Route::get('/', function () {
 
 Route::get('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'register']);
+Route::get('/logout', [AuthController::class, 'logout']);
 
 //admin
 Route::get('/berandaadmin', [AdminController::class, 'index']);
@@ -71,8 +72,8 @@ Route::post('/editgaleri/{id}', [AdminController::class, 'updategaleri']);
 Route::post('/destroygaleri/{id}', [AdminController::class, 'destroygaleri']);
 
 Route::get('/datapenyewa', [AdminController::class, 'datapenyewa']);
-Route::get('/datareservasiall', [AdminController::class, 'datareservasiall']);
-
+Route::get('/datareservasiall', [AdminController::class, 'reservasiadm']);
+Route::get('/reservasi/cari',[AdminController::class, 'cari']);
 
 
 Route::get('/datalaporan', [AdminController::class, 'datalaporan']);

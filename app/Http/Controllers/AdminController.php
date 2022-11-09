@@ -8,6 +8,7 @@ use App\Models\Paket;
 use App\Models\Promo;
 use App\Models\Artikel;
 use App\Models\Galeri;
+use App\Models\Reservasi;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
@@ -465,14 +466,30 @@ class AdminController extends Controller
          Galeri::where('id_galeri', $id)->delete();
          return redirect()->back()->with('success', 'Data Berhasil Dihapus');
      }
+
+     //resevasi
+    public function reservasiadm()
+    {
+        $data = Reservasi::all();
+        return view('admin/datareservasiall', ['data' => $data]);
+    }
+    public function cari(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
+ 
+    	// mengambil data dari table pegawai sesuai pencarian data
+		$data = Reservasi::all('nama_pesan')
+		->where('nama_pesan','like',"%".$cari."%");
+ 
+    	// mengirim data pegawai ke view index
+		return view('admin/datareservasiall', ['data' => $data]);
+ 
+	}
     //penyewa
     public function datapenyewa()
     {
         return view('admin/datapenyewa');
-    }
-    public function datareservasiall()
-    {
-        return view('admin/datareservasiall');
     }
     public function datalaporan()
     {
