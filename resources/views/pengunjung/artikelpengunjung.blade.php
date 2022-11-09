@@ -22,7 +22,7 @@
                     <p class="post-category">AGROWISATA</p>
 
                     <h2 class="title">
-                        <a href="blog-details.html">{{$artikel->judul}}</a>
+                        <a href="{{ url('/detailartikel', ['id_artikel' => $artikel->id_artikel]) }}">($artikel->judul}}</a>
                     </h2>
 
                 </article>

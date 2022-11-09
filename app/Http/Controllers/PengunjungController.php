@@ -41,6 +41,12 @@ class PengunjungController extends Controller
         return view('pengunjung/artikelpengunjung', ['data' => $data]);
     }
 
+    public function detailartikel($id_artikel)
+    {
+        $artikel = Artikel::find($id_artikel);
+        return view('pengunjung/detailartikel', ['artikel' => $artikel]);
+    }
+
     public function beranda()
     {
         return view('pengunjung/berandapengunjunglgn');
