@@ -36,7 +36,7 @@
         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="/berandaadmin" class="nav-link active">
+          <a href="/berandapetugas" class="nav-link ">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               BERANDA
@@ -53,7 +53,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/tables/simple.html" class="nav-link">
+              <a href="/registersewa" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>REGISTRASI</p>
               </a>

@@ -473,17 +473,35 @@ class AdminController extends Controller
         $data = Reservasi::all();
         return view('admin/datareservasiall', ['data' => $data]);
     }
+    public function detailreservasi($id_reservasi)
+    {
+        $reservasi = Reservasi::find($id_reservasi);
+        return view('admin/detailreservasi', ['reservasi' => $reservasi]);
+    }
     public function cari(Request $request)
 	{
 		// menangkap data pencarian
 		$cari = $request->cari;
  
-    	// mengambil data dari table pegawai sesuai pencarian data
+
 		$data = Reservasi::all('nama_pesan')
 		->where('nama_pesan','like',"%".$cari."%");
  
-    	// mengirim data pegawai ke view index
+
 		return view('admin/datareservasiall', ['data' => $data]);
+ 
+	}
+    //laporan
+    public function carilaporan(Request $request)
+	{
+		// menangkap data pencarian
+		$carilaporan = $request->carilaporan;
+ 
+
+		$data = Reservasi::all('tgl_pesan')
+		->where('tgl_pesan','like',"%".$carilaporan."%");
+
+		return view('admin/datalaporan', ['data' => $data]);
  
 	}
     //penyewa

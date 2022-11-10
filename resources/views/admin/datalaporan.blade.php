@@ -9,6 +9,11 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
+        <p>Cari Laporan:</p>
+            <form action="/laporan/carilaporan" method="GET">
+                <input type="text" name="carilaporan" placeholder="Cari Laporan ..." value="{{ old('cari') }}">
+                <input type="submit" value="CARI">
+            </form>
         <hr>
         <table id="example1" class="table table-bordered table-striped">
             <thead>

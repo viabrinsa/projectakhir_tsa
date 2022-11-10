@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Reservasi;
 
 class PetugasController extends Controller
 {
@@ -21,15 +22,38 @@ class PetugasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function datareservasipetugas()
-    {
-        return view('petugas/datareservasipetugas');
-    }
     public function tambahreservasi()
     {
         return view('petugas/tambahreservasipetugas');
     }
 
+    public function registersewa()
+    {
+        return view('petugas/registersewa');
+    }
+    public function reservasipetugas()
+    {
+        $data = Reservasi::all();
+        return view('petugas/datareservasipetugas', ['data' => $data]);
+    }
+    public function detailreservasipetugas($id_reservasi)
+    {
+        $reservasi = Reservasi::find($id_reservasi);
+        return view('petugas/detailreservasipetugas', ['reservasi' => $reservasi]);
+    }
+    public function carireservasiptg(Request $request)
+	{
+		// menangkap data pencarian
+		$carireservasiptg = $request->carireservasiptg;
+ 
+
+		$data = Reservasi::all('nama_pesan')
+		->where('nama_pesan','like',"%".$carireservasiptg."%");
+ 
+
+		return view('petugas/datareservasipetugas', ['data' => $data]);
+ 
+	}
     /**
      * Store a newly created resource in storage.
      *

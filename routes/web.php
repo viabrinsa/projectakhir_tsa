@@ -73,7 +73,10 @@ Route::post('/destroygaleri/{id}', [AdminController::class, 'destroygaleri']);
 
 Route::get('/datapenyewa', [AdminController::class, 'datapenyewa']);
 Route::get('/datareservasiall', [AdminController::class, 'reservasiadm']);
+Route::get('/detailreservasi/{id_reservasi}', [AdminController::class, 'detailreservasi']);
 Route::get('/reservasi/cari',[AdminController::class, 'cari']);
+
+Route::get('/laporan/carilaporan',[AdminController::class, 'carilaporan']);
 
 
 Route::get('/datalaporan', [AdminController::class, 'datalaporan']);
@@ -98,7 +101,8 @@ Route::get('/history', [PengunjungController::class, 'history']);
 
 //petugas
 Route::get('/berandapetugas', [PetugasController::class, 'index']);
-
-//petugas
-Route::get('/datareservasipetugas', [PetugasController::class, 'datareservasipetugas']);
+Route::get('/datareservasipetugas', [PetugasController::class, 'reservasipetugas']);
 Route::get('/tambahreservasipetugas', [PetugasController::class, 'tambahreservasipetugas']);
+Route::get('/registersewa', [PetugasController::class, 'registersewa']);
+Route::get('/detailreservasipetugas/{id_reservasi}', [PetugasController::class, 'detailreservasipetugas']);
+Route::get('/reservasipetugas/cari',[PetugasController::class, 'carireservasiptg']);

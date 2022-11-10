@@ -23,9 +23,7 @@
                     <th>Nama Pesan</th>
                     <th>Tanggal Pesan</th>
                     <th>Jenis Paket</th>
-                    <th>Promo</th>
                     <th>Jumlah Orang</th>
-                    <th>Alasan</th>
                     <th>Status</th>
                     <th>Aksi</th>
                 </tr>
@@ -36,12 +34,11 @@
                         <td>{{++$i}}</td>
                         <td>{{$reservasi->nama_pesan}}</td>
                         <td>{{$reservasi->tgl_pesan}}</td>
-                        <td>{{$reservasi->nama_pasket}}</td>
-                        <td>{{$reservasi->nama_promo}}</td>
+                        <td>{{$reservasi->nama_paket}}</td>
                         <td>{{$reservasi->jumlah_pesan}}</td>
-                        <td>{{$reservasi->alasan}}</td>
                         <td class="text-center">{{$reservasi->id_status}}</td>
-                        <td><a href="" class="btn btn-info">ACC</a></td>
+                        <td><a href="{{ url('/detailreservasi', ['id' => $reservasi->id_reservasi]) }}" class="btn btn-warning"><i class="fas fa-file"></i></a>
+                            
                     </tr>
                 @endforeach
             </tbody>
