@@ -24,7 +24,9 @@
                             <th>Tanggal Pesan</th>
                             <th>Jenis Paket</th>
                             <th>Promo</th>
+                            <th>Jenis Hari</th>
                             <th>Jumlah Orang</th>
+                            <th>Total Bayar</th>
                             <th>Status</th>
                             <th>Alasan</th>
                             <th>Aksi</th>
@@ -38,10 +40,12 @@
                             <td>{{$reservasi->tgl_pesan}}</td>
                             <td>{{$reservasi->nama_pasket}}</td>
                             <td>{{$reservasi->nama_promo}}</td>
+                            <td>{{$reservasi->nama_promo}}</td>
+                            <td>{{$reservasi->jumlah_pesan}}</td>
                             <td>{{$reservasi->jumlah_pesan}}</td>
                             <td>{{$reservasi->id_status}}</td>
                             <td>{{$reservasi->alasan}}</td>
-                            <td>
+                            <td> <a href="{{ url('/editreservasi', ['id' => $reservasi->id_reservasi]) }}" class="btn btn-warning">Edit</a>
                             </td>
                         </tr>
                         @endforeach

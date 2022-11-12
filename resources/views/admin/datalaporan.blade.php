@@ -23,6 +23,7 @@
                     <th>Tanggal Pesan</th>
                     <th>Jenis Paket</th>
                     <th>Jumlah Orang</th>
+                    <th>Total Bayar</th>
                 </tr>
             </thead>
         </table>

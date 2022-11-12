@@ -106,6 +106,11 @@ class PengunjungController extends Controller
 
         return redirect('history')->with('success', 'Data Berhasil Disimpan');
     }
+    public function editreservasi($id)
+     {
+         $reservasi = Reservasi::find($id);
+         return view('pengunjung/editreservasi', compact('reservasi'));
+     }
 
     public function history()
     {

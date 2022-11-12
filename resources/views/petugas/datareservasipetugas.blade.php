@@ -36,7 +36,7 @@
                         <td>{{$reservasi->jumlah_pesan}}</td>
                         <td class="text-center">{{$reservasi->id_status}}</td>
                         <td><a href="{{ url('/detailreservasipetugas', ['id' => $reservasi->id_reservasi]) }}" class="btn btn-warning">Detail</i></a>
-                        <a href="" class="btn btn-info">Done</i></a>
+                        <a href="" class="btn btn-info">Cetak</i></a>
                     </tr>
                 @endforeach
             </tbody>

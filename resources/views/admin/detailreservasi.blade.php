@@ -30,12 +30,6 @@
                                 </tr>
                                 <br>
                                 <tr>
-                                    <td>Jumlah Orang</td>
-                                    <td width="1%">:</td>
-                                    <td>{{$reservasi->jumlah_pesan}}</td>
-                                </tr>
-                                <br>
-                                <tr>
                                     <td>Jenis Paket</td>
                                     <td width="1%">:</td>
                                     <td>{{$reservasi->nama_paket}}</td>
@@ -45,6 +39,24 @@
                                     <td>Promo</td>
                                     <td width="1%">:</td>
                                     <td>{{$reservasi->nama_promo}}</td>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td>Jenis Hari</td>
+                                    <td width="1%">:</td>
+                                    <td></td>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td>Jumlah Orang</td>
+                                    <td width="1%">:</td>
+                                    <td>{{$reservasi->jumlah_pesan}}</td>
+                                </tr>
+                                <br>
+                                <tr>
+                                    <td>Total Bayar</td>
+                                    <td width="1%">:</td>
+                                    <td></td>
                                 </tr>
                                 <br>
                                 <tr>

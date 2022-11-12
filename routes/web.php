@@ -98,6 +98,7 @@ Route::get('/jenispaketpengunjunglgn', [PengunjungController::class, 'jenispaket
 Route::get('/reservasi', [PengunjungController::class, 'reservasi']);
 Route::post('/reservasi', [PengunjungController::class, 'storereservasi']);
 Route::get('/history', [PengunjungController::class, 'history']);
+Route::get('/editreservasi/{id?}', [PengunjungController::class, 'editreservasi'])->name("editreservasi");
 
 //petugas
 Route::get('/berandapetugas', [PetugasController::class, 'index']);

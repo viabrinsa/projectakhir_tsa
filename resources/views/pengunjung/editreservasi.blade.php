@@ -20,7 +20,7 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form method="post" action="" enctype="multipart/form-data" id="quickForm">
+                        <form method="post" action="{{url('editreservasi', ['id' => $reservasi->id_reservasi])}}" enctype="multipart/form-data" id="quickForm">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
@@ -34,25 +34,19 @@
                                 <div class="form-group">
                                     <label for="nama_paket">Jenis Paket</label>
                                     <select class="form-control">
-                                        @foreach($paket as $pkt)
-                                        <option value="{{$pkt->id_paket}}">{{$pkt->nama_paket}}</option>
-                                        @endforeach
+                                        
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="nama_promo">Promo</label>
                                     <select class="form-control">
-                                        @foreach($promo as $prm)
-                                        <option value="{{$prm->id_promo}}">{{$prm->nama_promo}}</option>
-                                        @endforeach
+                                        
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="harga_weekend}">Jenis Hari</label>
                                     <select class="form-control">
-                                        @foreach($promo as $prm)
-                                        <option value="{{$pkt->id_paket}}">{{$pkt->harga_weekend}}</option>
-                                        @endforeach
+                                        
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -81,6 +75,5 @@
     </div>
 </section>
 <!-- End Reservasi Section -->
-
 @include('layoutpengunjung.footer')
 @endsection
