@@ -42,18 +42,21 @@ class PetugasController extends Controller
         return view('petugas/detailreservasipetugas', ['reservasi' => $reservasi]);
     }
     public function carireservasiptg(Request $request)
-	{
-		// menangkap data pencarian
-		$carireservasiptg = $request->carireservasiptg;
- 
+    {
+        // menangkap data pencarian
+        $carireservasiptg = $request->carireservasiptg;
 
-		$data = Reservasi::all('nama_pesan')
-		->where('nama_pesan','like',"%".$carireservasiptg."%");
- 
 
-		return view('petugas/datareservasipetugas', ['data' => $data]);
- 
-	}
+        $data = Reservasi::all('nama_pesan')
+            ->where('nama_pesan', 'like', "%" . $carireservasiptg . "%");
+
+
+        return view('petugas/datareservasipetugas', ['data' => $data]);
+    }
+    public function datapengunjung()
+    {
+        return view('petugas/datapengunjung');
+    }
     /**
      * Store a newly created resource in storage.
      *
